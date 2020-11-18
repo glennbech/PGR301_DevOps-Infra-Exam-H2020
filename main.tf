@@ -1,7 +1,7 @@
 resource "google_cloud_run_service" "hello" {
   name = "cloudrun-monster"
   location = "us-central1"
-  project = "pgr301-devops-exam-monster"
+  project = "pgr301-devops-exam-monsters"
 
   template {
     spec {
