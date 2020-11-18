@@ -1,7 +1,7 @@
 terraform {
   backend "gcs" {
     bucket = "pgr301-devops-infra-bucket_01"
-    prefix = "terraformstate-h20"
+    prefix = "terraformstate"
     credentials = "google-key.json"
   }
 }
