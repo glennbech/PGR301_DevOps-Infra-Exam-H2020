@@ -1,5 +1,5 @@
 resource "google_cloud_run_service" "hello" {
-  name = "cloudrun-srv1"
+  name = "cloudrun-srv3"
   location = "us-central1"
   project = "pgr301-devops-exam-monster"
 
