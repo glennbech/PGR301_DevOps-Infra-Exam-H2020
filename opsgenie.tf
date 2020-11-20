@@ -3,24 +3,28 @@ provider "opsgenie" {
   api_url = "api.eu.opsgenie.com"
 }
 
+data "opsgenie_user" "opsgenie_owner" {
+  username = ""
+}
+
 resource "opsgenie_user" "user1" {
+  username = "lotnob99@student.kristiania.no"
   full_name = "Lottie Noble"
   role = "User"
-  username = "LotNob99@student.kristiania.no"
   locale = "no_NO"
   timezone = "Europe/Oslo"
 }
 
 resource "opsgenie_user" "user2" {
+  username = "natada99@student.kristiania.no"
   full_name = "Nathan Adams"
   role = "User"
-  username = "NatAda99@student.kristiania.no"
   locale = "no_NO"
   timezone = "Europe/Oslo"
 }
 
 resource "opsgenie_team" "team1" {
-  name = "A-Team"
+  name = "a-Team"
 
   member {
     id = opsgenie_user.user1.id
