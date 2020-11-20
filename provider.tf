@@ -12,13 +12,5 @@ provider "google-beta" {
   version = "~> 3.0.0-beta.1"
 }
 
-terraform {
-  required_providers {
-    opsgenie = {
-      source = "opsgenie/opsgenie"
-      version = "0.5.2"
-    }
-  }
-}
 
 
