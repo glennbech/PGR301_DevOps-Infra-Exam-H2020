@@ -28,6 +28,7 @@ script:
   set -ex;
   export TF_VAR_logz_token=$LOGZ_TOKEN
   export TF_VAR_logz_url=$LOGZ_URL
+  export TF_VAR_opsGenie_api-key=$OPSGENIE_API-KEY
   terraform init
   terraform plan
   terraform apply --auto-approve
