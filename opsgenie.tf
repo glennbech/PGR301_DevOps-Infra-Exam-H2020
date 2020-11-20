@@ -23,32 +23,32 @@ resource "opsgenie_team" "team1" {
   name = "A-Team"
 
   member {
-    id = "${opsgenie_user.user1.id}"
+    id = opsgenie_user.user1.id
     role = "user"
   }
 
   member {
-    id = "${opsgenie_user.user2.id}"
+    id = opsgenie_user.user2.id
     role = "user"
   }
 }
 
 resource "opsgenie_schedule" "schedule1" {
   name = "schedule1"
-  owner_team_id = "${opsgenie_team.team1.id}"
+  owner_team_id = opsgenie_team.team1.id
 }
 
 resource "opsgenie_schedule_rotation" "teamrotation" {
-  schedule_id = "${opsgenie_schedule.schedule1.id}"
+  schedule_id = opsgenie_schedule.schedule1.id
   start_date = "2020-10-30T00:00:00Z"
   type = "hourly"
   participant {
     type = "user"
-    id = "${opsgenie_user.user1.id}"
+    id = opsgenie_user.user1.id
   }
 
   participant {
     type = "user"
-    id = "${opsgenie_user.user2.id}"
+    id = opsgenie_user.user2.id
   }
 }
