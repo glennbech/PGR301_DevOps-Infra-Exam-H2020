@@ -4,7 +4,7 @@ provider "opsgenie" {
 }
 
 data "opsgenie_user" "opsgenie_owner" {
-  username = var.opsgenie_owner_email
+  username = "pusjon18@student.kristiania.no"
 }
 
 resource "opsgenie_user" "user1" {
