@@ -4,13 +4,6 @@ provider "opsgenie" {
   api_url = "api.eu.opsgenie.com"
 }
 
-
-/*
-data "opsgenie_user" "opsgenie_owner" {
-  username = "pusjon18@student.kristiania.no"
-}
-*/
-
 resource "opsgenie_user" "user1" {
   username = "lotnob99@student.kristiania.no"
   full_name = "Lottie Noble"
