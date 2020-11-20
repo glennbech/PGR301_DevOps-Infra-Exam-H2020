@@ -6,9 +6,9 @@ terraform {
     google-beta = {
       source = "hashicorp/google-beta"
     }
-    opsgenie = {
+   /* opsgenie = {
       source = "opsgenie/opsgenie"
-    }
+    }*/
     statuscake = {
       source = "terraform-providers/statuscake"
     }

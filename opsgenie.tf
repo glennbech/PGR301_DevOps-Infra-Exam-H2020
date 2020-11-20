@@ -1,13 +1,17 @@
+/*
 provider "opsgenie" {
   version = "0.5.2"
   api_url = "api.eu.opsgenie.com"
 }
+*/
 
+/*
 data "opsgenie_user" "opsgenie_owner" {
   username = "pusjon18@student.kristiania.no"
 }
+*/
 
-resource "opsgenie_user" "user1" {
+/*resource "opsgenie_user" "user1" {
   username = "lotnob99@student.kristiania.no"
   full_name = "Lottie Noble"
   role = "User"
@@ -55,4 +59,4 @@ resource "opsgenie_schedule_rotation" "teamrotation" {
     type = "user"
     id = opsgenie_user.user2.id
   }
-}
+}*/
