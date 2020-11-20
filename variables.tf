@@ -5,6 +5,3 @@ variable "logz_url" {
 
 }
 
-variable "opsGenie_api-key" {
-
-}
