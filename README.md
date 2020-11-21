@@ -13,6 +13,8 @@ Denne repositoryen er koblet sammen med min Github repository [JonPus/PGR301-Dev
 - `Cloud Run Admin`
 - `Service Account User`
 
+2. Last ned nøkkelfilen til den nye IAM Service Account brukeren og endre navnet til `google-key.json` og kjør kommandoen `travis encrypt-file google-key.json --add` i terminalen i prosjekt directorien.
+
 2. Lag en Cloud Storage Bucket som skal oppbevaring av forskjellige Docker imagen av de forskjellige versjonen av applikasjonen.
 
 3. Kjør travis encrypt <ENV.VAR>=<VALUE> på følgende API nøkler for å hemmeliggjøre de.
