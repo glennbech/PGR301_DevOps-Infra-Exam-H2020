@@ -15,6 +15,11 @@ resource "google_cloud_run_service" "hello" {
           name = "LOGZ_URL"
           value = var.logz_url
         }
+        resources {
+          limits = {
+            memory: 512
+          }
+        }
       }
     }
   }
