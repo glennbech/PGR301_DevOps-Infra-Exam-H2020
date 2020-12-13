@@ -1,12 +1,12 @@
 resource "google_cloud_run_service" "hello" {
   name = "cloudrun-srv2"
   location = "us-central1"
-  project = "pgr301-devops-exam-monster"
+  project = "terraformstate-100072"
 
   template {
     spec {
       containers {
-        image = "gcr.io/terraform-292215/helloworld@sha256:a910714e875838ce2ecceb3dbf29d0a40f0e9d083c2bca7ee8207a51beef8c18"
+        image = "gcr.io/terraform-292215/helloworld@sha256:a910714e875838ce2ecceb3dbf29d0a40f0e9d083c2bca7ee8207a51beef8c18 "
         env {
           name = "LOGZ_TOKEN"
           value = var.logz_token
