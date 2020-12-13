@@ -1,7 +1,7 @@
 resource "google_cloud_run_service" "hello" {
   name = "cloudrun-srv2"
   location = "us-central1"
-  project = "terraformstate-100072"
+  project = "terraform-292215"
 
   template {
     spec {
