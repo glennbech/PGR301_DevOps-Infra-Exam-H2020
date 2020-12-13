@@ -1,7 +1,7 @@
 
 provider "opsgenie" {
   version = "0.5.2"
-  api_url = "api.opsgenie.com"
+  api_url = "api.eu.opsgenie.com"
 }
 
 resource "opsgenie_user" "user1" {
